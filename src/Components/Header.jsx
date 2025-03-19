@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@/styles/Header.module.css";
 import Container from "./home/Container";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -9,7 +10,8 @@ export default function Header() {
       <Container className="flex justify-between items-center">
         <div className="flex items-center">
           <span className="text-pink-500 font-bold text-4xl">
-        E-Store <b className="text-black">.</b>
+       <Link href={'/'}>
+        E-Store </Link> <b className="text-black">.</b>
           </span>
         </div>
         <div className= {`${styles.searchBox} flex items-center`}>
@@ -32,10 +34,12 @@ const Navbar = ()=>{
     <nav className="flex items-center gap-5">
       <ul className="flex items-center gap-3 font-semibold ">
         <li className={styles.navLink}>
-          Home
+         <Link href={'/'}> Home</Link>
         </li>
         <li>
+          <Link href={'/store'}>
           Store
+          </Link>
         </li>
       </ul>
 

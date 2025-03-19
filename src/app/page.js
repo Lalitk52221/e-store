@@ -1,7 +1,14 @@
+import FeaturedProduct from '@/Components/home/FeaturedProduct'
+import HeroSection from '@/Components/home/HeroSection'
+import RecentlyAdded from '@/Components/home/RecentlyAdded'
 import React from 'react'
 
 export default function page() {
   return (
-    <div>page</div>
+    <div>
+      <RecentlyAdded/>
+      <FeaturedProduct/>
+      <HeroSection/>
+    </div>
   )
 }
