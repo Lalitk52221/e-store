@@ -8,10 +8,10 @@ export default function RecentlyAdded() {
   const [products, setProducts] = useState([]);
 
   const getProducts = async()=>{
-    const response = await fetch("https://fakestoreapi.com/products?limit=5");
+    const response = await fetch("https://fakestoreapi.in/api/products?limit=5");
     const data = await response.json();
-    console.log(data)
-    setProducts(data)
+    // console.log(data.products)
+    setProducts(data.products)
   }
 
   useEffect(()=>{

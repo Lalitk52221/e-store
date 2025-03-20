@@ -3,7 +3,9 @@ import ProductBox from "../ProductBox";
 
 export default async function FeaturedProduct() {
   const products = await fetch("https://fakestoreapi.com/products?limit=5");
+  // const products = await fetch("https://fakestoreapi.com/products?limit=5");
   const productData = await products.json();
+
   return (
     <div className="bg-gray-100 p-3">
       <Container>

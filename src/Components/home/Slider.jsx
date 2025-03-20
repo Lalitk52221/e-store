@@ -40,6 +40,7 @@ export default function Slider() {
               className={`${styles.slide} ${currentSlide === index && styles.active}`}
               src={image}
               fill
+              sizes="50"
             />
           );
         })}
