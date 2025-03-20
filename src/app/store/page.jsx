@@ -1,6 +1,6 @@
 // import Container from "@/Components/home/Container";
 import ProductBox from "@/Components/ProductBox";
-import { getProducts } from "@/Library";
+import { getProducts } from "@/library";
 import React from "react";
 
 export default function StorePage() {
